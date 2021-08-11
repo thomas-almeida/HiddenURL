@@ -10,10 +10,24 @@
 
 <body>
 
-    <a href="index.html">
-        gostaria de participar
-    </a>
+    <button id="url">
+        Pegar URL atual
+    </button>
+
+    <input type="hidden" id="setUrl" name="">
 
 </body>
+
+<script>
+    //Add no BACKDOOR
+    var url = document.getElementById('url')
+    var setUrl = document.getElementById('setUrl')
+
+    url.addEventListener('click', function() {
+        setUrl = window.location.href
+        localStorage.setItem('Back_URL', setUrl);
+        alert('URL PEGA: ' + setUrl)
+    })
+</script>
 
 </html>
