@@ -10,17 +10,40 @@
 
 .container-content {
     border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 2px 1px rgba(30, 143, 255, 0.692);
     border-radius: 5px;
     padding: 10px;
 }
 
 input {
-    background-color: #eee;
     padding: 5px;
+    padding-left: 0;
     border: none;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    outline: 0;
+}
+
+input:focus {
+    border-bottom: 1px solid dodgerblue;
 }
 
 a {
     text-decoration: none;
     color: mediumpurple;
+}
+
+#enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#enviar:hover {
+    background-color: white;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
 }
