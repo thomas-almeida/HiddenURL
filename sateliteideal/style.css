@@ -1,0 +1,93 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container-content {
+    border-radius: 5px;
+    padding: 10px;
+    width: 60%;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    padding-left: 0;
+    border: none;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    outline: 0;
+}
+
+input:focus {
+    border-bottom: 1px solid dodgerblue;
+}
+
+span {
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+span:hover {
+    color: dodgerblue;
+    background-color: white;
+    cursor: pointer;
+}
+
+#enviar {
+    padding: 10px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#enviar:hover {
+    background-color: white;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+}
+
+h1 {
+    font-size: 2.1rem;
+    color: rgb(24, 23, 23);
+}
+
+h2 {
+    font-size: 1.0rem;
+    color: rgba(51, 51, 51, 0.89);
+    font-weight: thin;
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.branding img {
+    width: 16px;
+    margin-right: 5px;
+}
+
+b {
+    color: dodgerblue;
+}

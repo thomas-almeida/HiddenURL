@@ -1,9 +1,11 @@
-var inputHidden = document.getElementById('hidden')
-
 //form components
 var nome = document.getElementById('txtNome')
 var email = document.getElementById('txtEmail')
 var btn = document.getElementById('enviar')
+var inputHidden = document.getElementById('hidden')
+
+var myUrl = window.location.href
+var splitOne
 
 btn.addEventListener('click', function() {
 
@@ -12,14 +14,15 @@ btn.addEventListener('click', function() {
     } else {
 
         //receber dados
-        inputHidden.value = localStorage.getItem('Back_URL')
+        inputHidden.value = localStorage.getItem("myUrl")
 
         // Enviar dados
         console.log('Nome: ' + nome.value)
         console.log('Email: ' + email.value)
-        console.log('Destino: ' + inputHidden.value + "/" + window.location.href.slice(22, 32))
-
-        alert('Os resultados apareceram no console 😎')
+        splitOne = myUrl.split("?var=")
+        console.log('Trajetória do Lead: ' + splitOne[1].substring(8) + " / " + splitOne[0].substring(8))
+        inputHidden.value = 'Trajetória do Lead: ' + splitOne[1].substring(8) + " / " + splitOne[0].substring(8)
+        console.log(inputHidden.value)
 
         //limpar campos
         nome.value = ""
