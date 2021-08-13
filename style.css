@@ -1,5 +1,5 @@
 * {
-    font-family: 'Monstserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -9,13 +9,13 @@
 }
 
 .container-content {
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    box-shadow: 1px 2px 1px rgba(30, 143, 255, 0.692);
     border-radius: 5px;
     padding: 10px;
+    width: 60%;
 }
 
 input {
+    width: 100%;
     padding: 5px;
     padding-left: 0;
     border: none;
@@ -27,13 +27,21 @@ input:focus {
     border-bottom: 1px solid dodgerblue;
 }
 
-a {
+#ancora {
     text-decoration: none;
-    color: mediumpurple;
+    color: white;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#ancora:hover {
+    color: dodgerblue;
+    background-color: white;
 }
 
 #enviar {
-    width: 100%;
     padding: 10px;
     background-color: dodgerblue;
     border: 1px solid dodgerblue;
@@ -45,5 +53,40 @@ a {
 #enviar:hover {
     background-color: white;
     border: 1px solid dodgerblue;
+    color: dodgerblue;
+}
+
+h1 {
+    font-size: 2.1rem;
+    color: rgb(24, 23, 23);
+}
+
+h2 {
+    font-size: 1.0rem;
+    color: rgba(51, 51, 51, 0.89);
+    font-weight: thin;
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.branding img {
+    width: 16px;
+    margin-right: 5px;
+}
+
+b {
     color: dodgerblue;
 }

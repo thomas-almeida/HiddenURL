@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="tentando fazer um desafio">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Página 2</title>
 </head>
 
@@ -14,25 +17,36 @@
 
     <div class="container">
         <div class="container-content">
-            <form action="">
-                <!-- Pegar url do outro site -->
 
-                <label for="name">Nome</label><br>
-                <input type="text" name="txtNome" id="txtNome" placeholder="Seu nome">
+            <div class="branding">
+                <img src="img/citar.png" alt="">
+                <p>hiddenUrl's</p>
+            </div>
 
-                <br>
-                <br>
+            <h1>Faça o teste de obter dados da URL anterior</h1>
+            <h2>Ative o console nas opções de desenvolvedor no Browser e veja a saída do formulário</h2>
 
-                <label for="name">Email</label><br>
-                <input type="text" name="txtEmail" id="txtEmail" placeholder="exemplo@email.com">
+            <div class="form-area">
+                <form action="">
+                    <!-- Pegar url do outro site -->
 
-                <br>
-                <br>
+                    <label for="name">Nome</label><br>
+                    <input type="text" name="txtNome" id="txtNome" placeholder="Seu nome">
 
-                <input type="button" id="enviar" value="Enviar">
-                <input id="hidden" type="hidden" name="URL">
+                    <br>
+                    <br>
 
-            </form>
+                    <label for="name">Email</label><br>
+                    <input type="text" name="txtEmail" id="txtEmail" placeholder="exemplo@email.com">
+
+                    <br>
+                    <br>
+
+                    <input type="button" id="enviar" value="Enviar">
+                    <input id="hidden" type="hidden" name="URL">
+
+                </form>
+            </div>
         </div>
     </div>
 

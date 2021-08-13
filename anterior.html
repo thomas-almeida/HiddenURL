@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <title>Página 1</title>
 </head>
 
@@ -13,9 +16,20 @@
 
     <div class="container">
         <div class="container-content">
+
+            <div class="branding">
+                <img src="img/citar.png" alt="">
+                <p>hiddenUrl's</p>
+            </div>
+
+            <h1>Faça o teste de obter dados da URL anterior</h1>
+            <h2>Clique no botão <b>"Gostaria de Participar?"</b> para avançar para a outra URL e preencher o formulário</h2>
+
+            <br>
+
             <form action="">
                 <!-- Pegar url do outro site -->
-                <a href="atual.html">gostaria de participar</a>
+                <a id="ancora" href="atual.html">Gostaria de Participar?</a>
                 <input type="hidden" id="setUrl" name="">
             </form>
         </div>
