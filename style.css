@@ -20,11 +20,7 @@ input {
     border: none;
 }
 
-#enviar {
-    width: 100%;
-    cursor: pointer;
-}
-
-#enviar:hover {
-    background-color: springgreen;
+a {
+    text-decoration: none;
+    color: mediumpurple;
 }
