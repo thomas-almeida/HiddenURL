@@ -26,5 +26,4 @@ btn.addEventListener('click', function() {
         email.value = ""
     }
 
-
 })
